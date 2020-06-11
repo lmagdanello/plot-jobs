@@ -25,4 +25,5 @@ This will generate a graphical analysis from 01-01 to 02-01.
 
 You will get a graph like this:
 
+
 ![alt text](https://github.com/lmagdanello/plot-jobs/blob/master/plot-jobs-example.png?raw=true)
