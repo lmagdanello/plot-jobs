@@ -9,12 +9,11 @@ def plot_jobs(date):
 
         failed_j = subprocess.getoutput('sudo sacct --starttime {} | egrep -E \'FAILED\' | wc -l'.format(date))
         complete_j = subprocess.getoutput('sudo sacct --starttime {} | egrep -E \'COMPLETED\' | wc -l'.format(date))
-        running_j = subprocess.getoutput('sudo sacct --starttime {} | egrep -E \'RUNNING\' | wc -l'.format(date))
         cancelled_j = subprocess.getoutput('sudo sacct --starttime {} | egrep -E \'CANCELLED\' | wc -l'.format(date))
 
         # state_dict: Armazena os estados dos Jobs em um dicionario
 
-        state_dict = { 'completed': int(complete_j), 'failed': int(failed_j), 'running': int(running_j), 'cancelled': int(cancelled_j) }
+        state_dict = { 'completed': int(complete_j), 'failed': int(failed_j), 'cancelled': int(cancelled_j) }
 
         # sorted_dict: Mapeia o dicionario de estados de forma crescente
 
