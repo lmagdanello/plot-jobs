@@ -10,11 +10,11 @@ This tool works using Slurm sacct command to make a total of the jobs that faile
 3. Slurmdbd; 
 4. sacct working properly.
 
-    To-do:
-    -> add `explode` to the highest value identified in the analysis;
-    -> change colors;
-    -> allow the user to make an analysis between periods;
-    -> implement gif for graphics;
+**To-do:**
+- add `explode` to the highest value identified in the analysis;
+- change colors;
+- allow the user to make an analysis between periods;
+- implement gif for graphics;
 
 ## How it works?
 
