@@ -2,7 +2,7 @@
 
 ##### Tool created in Python to plot job status using Slurm accounting.
 
-This tool works using Slurm sacct command, making a total of the jobs that failed, were canceled, ended and still running, to display them in a pie chart with the percentage values of these.
+This tool works using Slurm sacct command to make a total of the jobs that failed, were canceled and ended to display them in a pie chart with the percentage values of these.
 
     Prerequisites:
 1. python3.6;
@@ -26,4 +26,4 @@ This will generate a graphical analysis from 01-01 to 02-01.
 You will get a graph like this:
 
 
-![alt text](https://github.com/lmagdanello/plot-jobs/blob/master/plot-jobs-example.png?raw=true)
+![alt text](https://github.com/lmagdanello/plot-jobs/blob/master/plot-example.png?raw=true)
