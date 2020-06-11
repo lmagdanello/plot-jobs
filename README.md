@@ -4,11 +4,11 @@
 
 This tool works using Slurm sacct command, making a total of the jobs that failed, were canceled, ended and still running, to display them in a pie chart with the percentage values of these.
 
-Prerequisites:
-    - python3.6;
-    - Slurm; 
-    - Slurmdbd; 
-    - sacct working properly.
+    Prerequisites:
+1. python3.6;
+2. Slurm; 
+3. Slurmdbd; 
+4. sacct working properly.
 
 
 ## How it works?
