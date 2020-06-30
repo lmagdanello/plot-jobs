@@ -26,21 +26,21 @@ def plot_jobs(date):
         '''
 
         states = list(sorted_dict.keys())
-        values = list(sorted_dict.values())
+        values = list(sorted_dict.values()) 
 
         # Realizamos a criacao do graph
-        plt.figure(figsize=(25,25))
-        plt.subplot(221)
-        #explode = (0.02, 0.02, 0.02, 0.02)
+        colors = ('red', 'grey', 'green')
+        plt.figure(figsize=(10,10))
+        explode = (0, 0, 0.1)
 
-        plt.pie(values, shadow=False, startangle=90, radius=1800)
+        plt.pie(values, explode=explode, shadow=True, wedgeprops={'linewidth' : 1, 'edgecolor' : 'black'}, colors=colors, autopct='%8.1f%%')
         title = 'Job Status since: "{}"'.format(date)
 
         # Criamos a box de legendas
         plt.legend(
             loc='center left',
             labels=['%s: %1.1f%%' % (
-                l, (float(s) / sum(values)) * 100) for l, s in zip(states, values)], 
+                s, (float(v) / sum(values)) * 100) for s, v in zip(states, values)], 
             title=''.join('{:^50}'.format(s) for s in title.split('\n')), 
             bbox_to_anchor=(1, 0, 0, 1.3)
         )
