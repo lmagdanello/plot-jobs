@@ -11,8 +11,9 @@ This tool works using Slurm sacct command to make a total of the jobs that faile
 4. sacct working properly.
 
 **To-do:**
-- add `explode` to the highest value identified in the analysis;
-- change colors;
+- add `explode` to the highest value identified in the analysis (done)
+- change colors (done)
+- NEW: add RED color for Failed state;
 - allow the user to make an analysis between periods;
 - implement gif for graphics;
 
@@ -31,4 +32,4 @@ This will generate a graphical analysis from 01-01 to 02-01.
 You will get a graph like this:
 
 
-![alt text](https://github.com/lmagdanello/plot-jobs/blob/master/plot-example.png?raw=true)
+![alt text](https://github.com/lmagdanello/plot-jobs/blob/master/pie-plot-2020-01-01.png?raw=true)
