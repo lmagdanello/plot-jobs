@@ -1,19 +1,21 @@
 # plot-jobs
 
-##### Tool created in Python to plot job status using Slurm accounting.
+##### Tool created in Python to plot job status using Slurm accounting
 
-This tool works using Slurm sacct command to make a total of the jobs that failed, were canceled and ended to display them in a pie chart with the percentage values of these.
+This tool works with Slurm's sacct command to count a total of tasks that have failed, canceled and completed and to display them on a pie chart with percentage values.
 
     Prerequisites:
 1. python3.6;
 2. Slurm; 
 3. Slurmdbd; 
-4. sacct working properly.
+4. sacct working properly;
+5. matplotlib;
+6. root.
 
 **To-do:**
-- add `explode` to the highest value identified in the analysis (done)
-- change colors (done)
-- NEW: add RED color for Failed state;
+- add `explode` to the highest value identified in the analysis ( ✔ )
+- change colors ( ✔ )
+- NEW: add RED color for Failed state; ( in-progress... )
 - allow the user to make an analysis between periods;
 - implement gif for graphics;
 
@@ -30,6 +32,4 @@ Date at time of execution: *2020-02-01*
 This will generate a graphical analysis from 01-01 to 02-01.
 
 You will get a graph like this:
-
-
 ![alt text](https://github.com/lmagdanello/plot-jobs/blob/master/pie-plot-2020-01-01.png?raw=true)
