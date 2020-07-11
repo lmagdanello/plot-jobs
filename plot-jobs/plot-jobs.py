@@ -51,11 +51,11 @@ def parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('-s', '--starttime',
             action='store',
-            help='Starting time, format: 2020-02-02')
+            help='Starting date, format: YEAR-MONTH-DAY')
 
     parser.add_argument('-e', '--endtime',
             action='store',
-            help='Starting time, format: 2020-02-02')
+            help='Ending date, format: YEAR-MONTH-DAY')
     args = vars(parser.parse_args())
 
     if len(sys.argv) <= 1:
