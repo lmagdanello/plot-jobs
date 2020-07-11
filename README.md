@@ -20,15 +20,7 @@ This tool works with Slurm's sacct command to count a total of tasks that have f
 The script has a parser for you to assign the period you want to analyze. It will create a pie chart with job status data for this period.
 
 ---
-*plot_jobs -h:*
-usage: plot_jobs.py [-h] [-s STARTTIME] [-e ENDTIME]
-optional arguments:
- -h, --help            show this help message and exit
- -s STARTTIME, --starttime STARTTIME
-                       Starting date, format: YEAR-MONTH-DAY
-  -e ENDTIME, --endtime ENDTIME
-                        Ending date, format: YEAR-MONTH-DAY
-                      
+
 Usage example:
 
 *python3.6 plot_jobs.py -s 2020-01-01 -e 2020-07-11*
