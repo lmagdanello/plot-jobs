@@ -13,23 +13,27 @@ This tool works with Slurm's sacct command to count a total of tasks that have f
 6. root.
 
 **To-do:**
-- add `explode` to the highest value identified in the analysis ( ✔ )
-- change colors ( ✔ )
-- NEW: add RED color for Failed state; ( in-progress... )
-- allow the user to make an analysis between periods;
 - implement gif for graphics;
 
 ## How it works?
 
-The script has a simple parser for you assign the date you want to analyze. It will create the chart based on this date until the current date.
+The script has a parser for you to assign the period you want to analyze. It will create a pie chart with job status data for this period.
 
-Example:
+|*plot_jobs -h:*
+|
+|usage: plot_jobs.py [-h] [-s STARTTIME] [-e ENDTIME]
+|
+|optional arguments:
+|  -h, --help            show this help message and exit
+|  -s STARTTIME, --starttime STARTTIME
+|                        Starting date, format: YEAR-MONTH-DAY
+|  -e ENDTIME, --endtime ENDTIME
+|                        Ending date, format: YEAR-MONTH-DAY
+                        
+Usage example:
 
-Date at time of execution: *2020-02-01*
+*python3.6 plot_jobs.py -s 2020-01-01 -e 2020-07-11*
 
-> python3 plot-jobs.py -d (or --date) 2020-01-01
-
-This will generate a graphical analysis from 01-01 to 02-01.
-
-You will get a graph like this:
+   You will get a graph like this:
+   
 ![alt text](https://github.com/lmagdanello/plot-jobs/blob/master/pie-plot-2020-01-01.png?raw=true)
