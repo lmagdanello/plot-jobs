@@ -27,4 +27,4 @@ Usage example:
 
    You will get a graph like this:
    
-![alt text](https://github.com/lmagdanello/plot-jobs/blob/master/pie-plot-2020-01-01.png?raw=true)
+![alt text](https://github.com/lmagdanello/plot-jobs/blob/master/pie-plot-mngt0-1-20-07-11.png?raw=true)
